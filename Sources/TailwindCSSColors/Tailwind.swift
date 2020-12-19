@@ -8,12 +8,12 @@ import UIKit
 public struct Tailwind {
     
     #if os(OSX)
-        public typealias Color = NSColor
+    public typealias Color = NSColor
     #else
-        public typealias Color = UIColor
+    public typealias Color = UIColor
     #endif
     
-    public static var clear: Color = Color.clear
+    internal static var clear: Color = Color.clear
     
     public enum TWColor: String {
         case blueGray50, blueGray100, blueGray200, blueGray300, blueGray400, blueGray500, blueGray600, blueGray700, blueGray800, blueGray900
@@ -39,16 +39,14 @@ public struct Tailwind {
         case pink50, pink100, pink200, pink300, pink400, pink500, pink600, pink700, pink800, pink900
         case rose50, rose100, rose200, rose300, rose400, rose500, rose600, rose700, rose800, rose900
     }
-    
-    #if os(OSX)
-        public static func color(_ color: TWColor) -> NSColor {
-            Color(named: color.rawValue, bundle: Bundle.module) ?? clear
-        }
-    #else
-        public static func color(_ color: TWColor) -> UIColor {
-            return Color(named: color.rawValue, in: Bundle.module, compatibleWith: nil) ?? clear
-        }
-    #endif
+        
+    public static func color(_ color: TWColor) -> Color {
+        #if os(OSX)
+        return Color(named: color.rawValue, bundle: Bundle.module) ?? clear
+        #else
+        return Color(named: color.rawValue, in: Bundle.module, compatibleWith: nil) ?? clear
+        #endif
+    }
     
 }
 
