@@ -46,7 +46,7 @@ public struct Tailwind {
         }
     #else
         public static func color(_ color: TWColor) -> UIColor {
-            return Color(named: color.rawValue, in: Bundle.module, compatibleWith: nil)
+            return Color(named: color.rawValue, in: Bundle.module, compatibleWith: nil) ?? clear
         }
     #endif
     
