@@ -36,7 +36,7 @@ https://github.com/SammySmallman/TailwindCSSColors
 ```
 ### Swift Package Manager
 
-Add the package dependency to your Package.swift and depend on "Tailwind" in the necessary targets:
+Add the package dependency to your Package.swift and depend on "TailwindCSSColors" in the necessary targets:
 
 ```  swift
 dependencies: [
