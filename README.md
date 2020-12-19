@@ -48,7 +48,7 @@ dependencies: [
 ### Step 1
 Import TailwindCSS Colors into your project
 ```swift
-import Tailwind
+import TailwindCSSColors
 ```
 
 ### Step 2
