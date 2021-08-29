@@ -179,6 +179,12 @@ final class TailwindCSSColorsTests: XCTestCase {
         }
     }
     
+    func testNumericScale() {
+        let greenColor = Tailwind.color(.green, numericScale: .ns500)
+        
+        XCTAssertEqual(greenColor, Tailwind.color(.green500))
+    }
+    
     static var allTests = [
         ("testBlueGray", testBlueGray),
         ("testCoolGray", testCoolGray),

@@ -15,7 +15,45 @@ public struct Tailwind {
     
     internal static var clear: Color = Color.clear
     
-    public enum TWColor: String {
+    public enum TWNumbericScale: Int {
+        case ns50 = 50
+        case ns100 = 100
+        case ns200 = 200
+        case ns300 = 300
+        case ns400 = 400
+        case ns500 = 500
+        case ns600 = 600
+        case ns700 = 700
+        case ns800 = 800
+        case ns900 = 900
+    }
+    
+    public enum TWBaseColor: String {
+        case blueGray
+        case coolGray
+        case gray
+        case trueGray
+        case warmGray
+        case red
+        case orange
+        case amber
+        case yellow
+        case lime
+        case green
+        case emerald
+        case teal
+        case cyan
+        case lightBlue
+        case blue
+        case indigo
+        case violet
+        case purple
+        case fushia
+        case pink
+        case rose
+    }
+    
+    public enum TWColor: String, CaseIterable {
         case blueGray50, blueGray100, blueGray200, blueGray300, blueGray400, blueGray500, blueGray600, blueGray700, blueGray800, blueGray900
         case coolGray50, coolGray100, coolGray200, coolGray300, coolGray400, coolGray500, coolGray600, coolGray700, coolGray800, coolGray900
         case gray50, gray100, gray200, gray300, gray400, gray500, gray600, gray700, gray800, gray900
@@ -45,6 +83,14 @@ public struct Tailwind {
         return Color(named: color.rawValue, bundle: Bundle.module) ?? clear
         #else
         return Color(named: color.rawValue, in: Bundle.module, compatibleWith: nil) ?? clear
+        #endif
+    }
+    
+    public static func color(_ color: TWBaseColor, numericScale: TWNumbericScale) -> Color {
+        #if os(OSX)
+        return Color(named: "\(color.rawValue)\(numericScale.rawValue)", bundle: Bundle.module) ?? clear
+        #else
+        return Color(named: "\(color.rawValue)\(numericScale.rawValue)", in: Bundle.module, compatibleWith: nil) ?? clear
         #endif
     }
     
