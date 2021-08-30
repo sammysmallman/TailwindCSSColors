@@ -43,7 +43,7 @@ public struct Tailwind {
         case emerald
         case teal
         case cyan
-        case lightBlue
+        case sky
         case blue
         case indigo
         case violet
@@ -68,7 +68,7 @@ public struct Tailwind {
         case emerald50, emerald100, emerald200, emerald300, emerald400, emerald500, emerald600, emerald700, emerald800, emerald900
         case teal50, teal100, teal200, teal300, teal400, teal500, teal600, teal700, teal800, teal900
         case cyan50, cyan100, cyan200, cyan300, cyan400, cyan500, cyan600, cyan700, cyan800, cyan900
-        case lightBlue50, lightBlue100, lightBlue200, lightBlue300, lightBlue400, lightBlue500, lightBlue600, lightBlue700, lightBlue800, lightBlue900
+        case sky50, sky100, sky200, sky300, sky400, sky500, sky600, sky700, sky800, sky900
         case blue50, blue100, blue200, blue300, blue400, blue500, blue600, blue700, blue800, blue900
         case indigo50, indigo100, indigo200, indigo300, indigo400, indigo500, indigo600, indigo700, indigo800, indigo900
         case violet50, violet100, violet200, violet300, violet400, violet500, violet600, violet700, violet800, violet900

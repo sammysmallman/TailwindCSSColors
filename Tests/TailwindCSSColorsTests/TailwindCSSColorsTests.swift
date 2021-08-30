@@ -115,8 +115,8 @@ final class TailwindCSSColorsTests: XCTestCase {
         }
     }
     
-    func testLightBlue() {
-        let colors: [Tailwind.TWColor] = [.lightBlue50, .lightBlue100, .lightBlue200, .lightBlue300, .lightBlue400, .lightBlue500, .lightBlue600, .lightBlue700, .lightBlue800, .lightBlue900]
+    func testSky() {
+        let colors: [Tailwind.TWColor] = [.sky50, .sky100, .sky200, .sky300, .sky400, .sky500, .sky600, .sky700, .sky800, .sky900]
         
         colors.forEach {
             XCTAssertNotEqual(Tailwind.color($0), Tailwind.clear)
@@ -199,7 +199,7 @@ final class TailwindCSSColorsTests: XCTestCase {
         ("testGreen", testGreen),
         ("testEmerald", testEmerald),
         ("testTeal", testTeal),
-        ("testLightBlue", testLightBlue),
+        ("testSky", testSky),
         ("testBlue", testBlue),
         ("testIndigo", testIndigo),
         ("testViolet", testViolet),
