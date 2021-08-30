@@ -48,7 +48,7 @@ public struct Tailwind {
         case indigo
         case violet
         case purple
-        case fushia
+        case fuchsia
         case pink
         case rose
     }
