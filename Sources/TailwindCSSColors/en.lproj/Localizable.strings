@@ -1,0 +1,67 @@
+/* TWBaseColor */
+
+/* blueGray */
+"TWBASECOLOR_BLUE_GRAY" = "Blue Gray";
+
+/* coolGray */
+"TWBASECOLOR_COOL_GRAY" = "Cool Gray";
+
+/* gray */
+"TWBASECOLOR_GRAY" = "Gray";
+
+/* trueGray */
+"TWBASECOLOR_TRUE_GRAY" = "True Gray";
+
+/* warmGray */
+"TWBASECOLOR_WARM_GRAY" = "Warm Gray";
+
+/* red */
+"TWBASECOLOR_RED" = "Red";
+
+/* orange */
+"TWBASECOLOR_ORANGE" = "Orange";
+
+/* amber */
+"TWBASECOLOR_AMBER" = "Amber";
+
+/* yellow */
+"TWBASECOLOR_YELLOW" = "Yellow";
+
+/* lime */
+"TWBASECOLOR_LIME" = "Lime";
+
+/* green */
+"TWBASECOLOR_GREEN" = "Green";
+
+/* emerald */
+"TWBASECOLOR_EMERALD" = "Emerald";
+
+/* teal */
+"TWBASECOLOR_TEAL" = "Teal";
+
+/* cyan */
+"TWBASECOLOR_CYAN" = "Cyan";
+
+/* sky */
+"TWBASECOLOR_SKY" = "Sky";
+
+/* blue */
+"TWBASECOLOR_BLUE" = "Blue";
+
+/* indigo */
+"TWBASECOLOR_INDIGO" = "Indigo";
+
+/* violet */
+"TWBASECOLOR_VIOLET" = "Violet";
+
+/* purple */
+"TWBASECOLOR_PURPLE" = "Purple";
+
+/* fuchsia */
+"TWBASECOLOR_FUCHSIA" = "Fuchsia";
+
+/* pink */
+"TWBASECOLOR_PINK" = "Pink";
+
+/* rose */
+"TWBASECOLOR_ROSE" = "Rose";

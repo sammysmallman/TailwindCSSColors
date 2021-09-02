@@ -28,7 +28,7 @@ public struct Tailwind {
         case ns900 = 900
     }
     
-    public enum TWBaseColor: String {
+    public enum TWBaseColor: String, CustomStringConvertible {
         case blueGray
         case coolGray
         case gray
@@ -51,6 +51,33 @@ public struct Tailwind {
         case fuchsia
         case pink
         case rose
+        
+        public var description: String {
+            switch self {
+            case .blueGray: return NSLocalizedString("TWBASECOLOR_BLUE_GRAY", bundle: .module, comment: "blueGray")
+            case .coolGray: return NSLocalizedString("TWBASECOLOR_COOL_GRAY", bundle: .module, comment: "coolGray")
+            case .gray: return NSLocalizedString("TWBASECOLOR_GRAY", bundle: .module, comment: "gray")
+            case .trueGray: return NSLocalizedString("TWBASECOLOR_TRUE_GRAY", bundle: .module, comment: "trueGray")
+            case .warmGray: return NSLocalizedString("TWBASECOLOR_WARM_GRAY", bundle: .module, comment: "warmGray")
+            case .red: return NSLocalizedString("TWBASECOLOR_RED", bundle: .module, comment: "red")
+            case .orange: return NSLocalizedString("TWBASECOLOR_ORANGE", bundle: .module, comment: "orange")
+            case .amber: return NSLocalizedString("TWBASECOLOR_AMBER", bundle: .module, comment: "amber")
+            case .yellow: return NSLocalizedString("TWBASECOLOR_YELLOW", bundle: .module, comment: "yellow")
+            case .lime: return NSLocalizedString("TWBASECOLOR_LIME", bundle: .module, comment: "lime")
+            case .green: return NSLocalizedString("TWBASECOLOR_GREEN", bundle: .module, comment: "green")
+            case .emerald: return NSLocalizedString("TWBASECOLOR_EMERALD", bundle: .module, comment: "emerald")
+            case .teal: return NSLocalizedString("TWBASECOLOR_TEAL", bundle: .module, comment: "teal")
+            case .cyan: return NSLocalizedString("TWBASECOLOR_CYAN", bundle: .module, comment: "cyan")
+            case .sky: return NSLocalizedString("TWBASECOLOR_SKY", bundle: .module, comment: "sky")
+            case .blue: return NSLocalizedString("TWBASECOLOR_BLUE", bundle: .module, comment: "blue")
+            case .indigo: return NSLocalizedString("TWBASECOLOR_INDIGO", bundle: .module, comment: "indigo")
+            case .violet: return NSLocalizedString("TWBASECOLOR_VIOLET", bundle: .module, comment: "violet")
+            case .purple: return NSLocalizedString("TWBASECOLOR_PURPLE", bundle: .module, comment: "purple")
+            case .fuchsia: return NSLocalizedString("TWBASECOLOR_FUCHSIA", bundle: .module, comment: "fuchsia")
+            case .pink: return NSLocalizedString("TWBASECOLOR_PINK", bundle: .module, comment: "pink")
+            case .rose: return NSLocalizedString("TWBASECOLOR_ROSE", bundle: .module, comment: "rose")
+            }
+        }
     }
     
     public enum TWColor: String, CaseIterable {
