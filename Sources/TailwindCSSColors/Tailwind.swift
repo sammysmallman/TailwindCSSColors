@@ -15,7 +15,7 @@ public struct Tailwind {
     
     internal static var clear: Color = Color.clear
     
-    public enum TWNumbericScale: Int {
+    public enum TWNumericScale: Int {
         case ns50 = 50
         case ns100 = 100
         case ns200 = 200
@@ -113,7 +113,7 @@ public struct Tailwind {
         #endif
     }
     
-    public static func color(_ color: TWBaseColor, numericScale: TWNumbericScale) -> Color {
+    public static func color(_ color: TWBaseColor, numericScale: TWNumericScale) -> Color {
         #if os(OSX)
         return Color(named: "\(color.rawValue)\(numericScale.rawValue)", bundle: Bundle.module) ?? clear
         #else
