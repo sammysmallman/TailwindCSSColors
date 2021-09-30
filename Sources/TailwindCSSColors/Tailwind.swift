@@ -104,6 +104,10 @@ public struct Tailwind {
         case pink50, pink100, pink200, pink300, pink400, pink500, pink600, pink700, pink800, pink900
         case rose50, rose100, rose200, rose300, rose400, rose500, rose600, rose700, rose800, rose900
     }
+    
+    public static func tailwind(_ color: TWBaseColor, numericScale: TWNumericScale) -> TWColor? {
+        TWColor(rawValue: "\(color.rawValue)\(numericScale.rawValue)")
+    }
         
     public static func color(_ color: TWColor) -> Color {
         #if os(OSX)
