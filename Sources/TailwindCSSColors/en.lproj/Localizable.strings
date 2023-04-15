@@ -1,19 +1,19 @@
 /* TWBaseColor */
 
-/* blueGray */
-"TWBASECOLOR_BLUE_GRAY" = "Blue Gray";
-
-/* coolGray */
-"TWBASECOLOR_COOL_GRAY" = "Cool Gray";
+/* slate */
+"TWBASECOLOR_SLATE" = "Slate";
 
 /* gray */
 "TWBASECOLOR_GRAY" = "Gray";
 
-/* trueGray */
-"TWBASECOLOR_TRUE_GRAY" = "True Gray";
+/* zinc */
+"TWBASECOLOR_ZINC" = "Zinc";
 
-/* warmGray */
-"TWBASECOLOR_WARM_GRAY" = "Warm Gray";
+/* neutral */
+"TWBASECOLOR_NEUTRAL" = "Neutral";
+
+/* stone */
+"TWBASECOLOR_STONE" = "Stone";
 
 /* red */
 "TWBASECOLOR_RED" = "Red";

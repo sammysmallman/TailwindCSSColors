@@ -3,12 +3,12 @@
 A color palette designed by [Tailwind Labs](https://tailwindcss.com/) presented as a Swift Package for easy integration into your iOS projects.
 The full list of colors can be seen at [tailwindcss.com](https://tailwindcss.com/docs/customizing-colors). 
 
-The following colors are available with a numerical scale e.g. `red50`, `red100`, `red200` ... `red900`.
-- Blue Gray 
-- Cool Gray
+The following colors are available with a numerical scale e.g. `red50`, `red100`, `red200` ... `red950`.
+- Slate
 - Gray
-- True Gray
-- Warm Gray
+- Zinc
+- Neutral
+- Stone
 - Red
 - Orange
 - Amber
@@ -40,7 +40,7 @@ Add the package dependency to your Package.swift and depend on "TailwindCSSColor
 
 ```  swift
 dependencies: [
-    .package(url: "https://github.com/SammySmallman/TailwindCSSColors", from: "2.0.0")
+    .package(url: "https://github.com/SammySmallman/TailwindCSSColors", from: "3.0.0")
 ]
 ```
 ## Quick Start
